@@ -54,4 +54,77 @@ LetsUpgrade AWS Essential Batch1 Assignment are present here
       
    
        
+## *Day4*
+
+##### 1) aws_assignment_day4.pdf
+
+        PROJECT 3:
+
+		Step1: Create two linux instances,Use the first free linux AMI 
+
+		Step2: Launch both instances using Mobaxterm 
+
+		Step3: Host html login webpage on both servers 
+
+			(Refer video for steps) 
+			
+			NOTE:Make change in the label of the second sever html configuration 
+
+ 
+
+			HTML code for login page: 
+
+ 
+
+				<form action="action_page.php" method="post"> 
+
+					  <div class="imgcontainer"> 
+
+						  <img src="img_avatar2.png" alt="Avatar" class="avatar"> 
+
+					  </div> 
+
+ 
+
+					  <div class="container"> 
+
+					    <label for="uname"><b>Username</b></label> 
+
+					    <input type="text" placeholder="Enter Username" name="uname" required> 
+
+
+					    <label for="psw"><b>Password</b></label> 
+
+					    <input type="password" placeholder="Enter Password" name="psw" required> 
+
+
+					    <button type="submit">Login</button> 
+
+					    <label> 
+
+					    <input type="checkbox" checked="checked" name="remember"> Remember me 
+
+					    </label> 
+
+					  </div> 
+
   
+					 <div class="container" style="background-color:#f1f1f1"> 
+
+					    <button type="button" class="cancelbtn">Cancel</button> 
+
+					    <span class="psw">Forgot <a href="#">password?</a></span> 
+
+					  </div> 
+
+					</form> 
+
+ 
+
+		Step4: Check if the application is deployed on both servers by copy pasting the public ip of the servers into 
+
+		       the browser. 
+
+		Step5: Create a application Load balancer with the above two instances as targets 
+
+		Step6: Check the functioning of ELB 
